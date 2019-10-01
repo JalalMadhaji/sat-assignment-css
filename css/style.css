@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  font-size: 100%;
+  position: relative;
+}
+body > header {
+  background: linear-gradient(
+      rgba(71, 71, 71, 0.808) 100%,
+      rgba(71, 71, 71, 0.808) 100%
+    ),
+    url(../images/img_2_big.jpg) no-repeat;
+  background-size: cover;
+  height: 600px;
+  z-index: 1;
+  position: relative;
+}
+/* header::before {
+  background-color: rgba(71, 71, 71, 0.808);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+} */
+
+header #top-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  height: 100px;
+  /* position: sticky; */
+  /* top: 0; */
+  z-index: 99;
+}
+header li {
+  list-style: none;
+}
+header nav {
+  width: 40%;
+}
+header #top-menu nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+header #top-menu a {
+  text-decoration: none;
+  color: white;
+}
+header #top-menu a:target {
+  border-bottom: 2px solid white;
+}
+header #hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.6em;
+  color: white;
+}
+header li.contact-btn {
+  background: #0074d9;
+  padding: 10px 20px;
+  border-radius: 40px;
+}
+main .two-cell-wrapper {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 20px 0;
+}
+main .right-cont section {
+  border: 1px solid rgb(236, 223, 223);
+  border-radius: 3px;
+  padding: 20px;
+  text-align: center;
+}
+main .left-cont p {
+  margin: 10px auto;
+}
+main .right-cont section h3 {
+  border-bottom: 1px solid rgb(236, 223, 223);
+}
+main .right-cont section img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 40px auto 20px;
+}
+main .right-cont section p {
+  margin: 20px auto;
+  color: rgb(129, 119, 119);
+}
+main .two-cell-wrapper .left-cont {
+  color: rgb(129, 119, 119);
+  padding-right: 20px;
+}
+main .two-cell-wrapper .left-cont .black {
+  color: black;
+}
+main .adm-btn {
+  padding: 14px 20px;
+  background: #0074d9;
+  border: none;
+  font-size: 1em;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px auto 80px;
+}
+main .two-cell-wrapper .left-cont ul {
+  list-style: none;
+  padding-left: 50px;
+}
+main .two-cell-wrapper .left-cont ul.comments > li {
+  position: relative;
+  margin: 20px auto;
+}
+main .two-cell-wrapper .left-cont ul.comments li img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: -70px;
+}
+main .two-cell-wrapper .left-cont ul.comments a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background: rgb(211, 211, 211);
+  margin: 10px auto;
+  display: inline-block;
+}
+main .comment-form form {
+  background: #eee;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+main .comment-form form label,
+main .comment-form form input {
+  display: block;
+  margin: 10px auto;
+}
+main .comment-form form input[type="text"],
+main .comment-form form input[type="email"],
+main .comment-form form textarea {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgb(184, 181, 181);
+  border-radius: 4px;
+}
+main .comment-form form textarea {
+  height: auto;
+}
+main .courses {
+  position: relative;
+}
+main .courses header {
+  padding: 50px 0;
+  height: 300px;
+  background: rgb(49, 55, 63);
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  z-index: 0;
+}
+main .courses section {
+  width: 75%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+  z-index: 3;
+  /* top: 60%;
+  left: 50%;
+  transform: translate(-50%, 0); */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main .courses div {
+  position: relative;
+  text-align: left;
+
+  margin: 0 15px;
+  box-shadow: 0px 5px 2px #666;
+}
+main .courses div img {
+  width: 100%;
+  height: 30%;
+}
+main .courses div > footer {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+main .courses div > footer span {
+  border: 1px solid rgb(245, 227, 227);
+  padding: 20px;
+}
+main .courses div .price {
+  position: absolute;
+  top: 37%;
+  right: 0;
+  background: #0074d9;
+  color: white;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+}
+main .courses div article {
+  padding: 15px 20px;
+  text-align: left;
+}
+main .courses div article a {
+  text-decoration: none;
+  color: #0074d9;
+  display: block;
+  margin: 10px auto;
+}
+main .courses .paginate {
+  text-align: center;
+  box-shadow: none;
+  margin: 0px auto 50px;
+}
+main .courses .paginate .adm-btn {
+  margin: 0 10px;
+}
+footer#page-footer {
+  background: linear-gradient(#cde4f8, white);
+  text-align: center;
+  line-height: 2;
+  padding: 50px;
+}
+footer#page-footer ul {
+  list-style: none;
+}
+footer#page-footer section {
+  display: grid;
+  padding: 50px 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: left;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(216, 205, 205);
+}
+footer#page-footer section div {
+  margin-left: 50px;
+}
+footer#page-footer section p {
+  color: #666;
+}
+footer#page-footer section a {
+  text-decoration: none;
+  color: #0074d9;
+  /* display: block; */
+  /* margin: 10px auto; */
+}
+footer#page-footer section input[type="email"] {
+  height: 40px;
+  width: 60%;
+  border: 1px solid rgb(199, 196, 196);
+  padding: 5px;
+}
+
+footer#page-footer section input::placeholder {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+footer#page-footer section .adm-btn {
+  height: 40px;
+  background: #0074d9;
+  color: white;
+  width: 40%;
+  display: inline-block;
+  border: none;
+}
+footer#page-footer address {
+  margin-top: 30px;
+  color: #666;
+}
