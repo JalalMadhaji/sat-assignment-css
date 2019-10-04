@@ -1,0 +1,215 @@
+header#page-header {
+  background: linear-gradient(
+      rgba(71, 71, 71, 0.808) 100%,
+      rgba(71, 71, 71, 0.808) 100%
+    ),
+    url(../images/hero_1.jpg) no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+header #hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  padding: 0 50px;
+}
+header #hero form {
+  width: 60%;
+  position: relative;
+  top: -20%;
+  left: 10%;
+  background: rgb(255, 255, 255);
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+header #hero form h3 {
+  color: black;
+  margin: 10px 0;
+}
+header #hero form input[type="email"],
+header #hero form input[type="password"] {
+  margin: 5px auto;
+  padding: 0 5px;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgb(184, 181, 181);
+}
+.main-btn {
+  display: inline-block;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background: #0074d9;
+  color: white;
+  text-decoration: none;
+  margin: 20px 0;
+  font-size: 0.6em;
+}
+main .courses header {
+  background: #0074d9;
+}
+section#our-programs {
+  padding: 50px 0;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section#our-programs article {
+  width: 50%;
+}
+p {
+  color: #888;
+  margin: 10px auto;
+  line-height: 2;
+}
+section.two-cells {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 50px 0;
+}
+img {
+  width: 100%;
+}
+section.two-cells article {
+  width: 55%;
+  margin-left: 20%;
+}
+section.two-cells article span {
+  margin: 10px auto;
+  display: inline-block;
+  color: #0074d9;
+}
+section.three-cells {
+  width: 70%;
+  padding: 50px 0;
+  margin: 10px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+section.three-cells div {
+  position: relative;
+  border: 1px solid rgba(206, 206, 206, 0.493);
+  padding: 70px 20px 20px;
+  text-align: center;
+}
+section.three-cells img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -33%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+section.three-cells h4 {
+  margin: 10px auto;
+}
+section.three-cells span {
+  color: #ccc;
+}
+section.three-cells p {
+  line-height: 1.6;
+}
+section.colored-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #333;
+  padding: 50px 0;
+}
+section.colored-sec article {
+  width: 50%;
+  margin: 10px auto;
+  color: white;
+}
+section.colored-sec article img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+section.why-sec {
+  /* height: 665px; */
+  height: 725px;
+  padding: 40px 0 0;
+  text-align: center;
+  position: relative;
+  /* background: #0074d9; */
+}
+section.why-sec .sec-wrap {
+  display: flex;
+  margin: 50px auto 0;
+}
+section.why-sec .sec-wrap figure {
+  width: 40%;
+  margin-left: 20%;
+}
+section.why-sec .sec-wrap .card {
+  background: white;
+  padding: 20px;
+  height: unset;
+  width: 80%;
+  margin-left: 80%;
+  box-shadow: 0 0 20px rgba(92, 92, 92, 0.377);
+  border-radius: 3px;
+  text-align: left;
+}
+section.why-sec .side-blob {
+  width: 40%;
+  position: absolute;
+  left: -10%;
+  top: 30%;
+  z-index: -1;
+}
+section.why-sec .side-blob.blob-r {
+  top: -10%;
+  left: unset;
+  right: -5%;
+  width: 30%;
+}
+section.comment-form {
+  background: #eee;
+  padding: 50px 0;
+}
+section.comment-form > div {
+  width: 50%;
+  margin: 0 auto;
+}
+section.comment-form form {
+  background: unset;
+  padding: 0;
+}
+section.comment-form form input[type="text"],
+section.comment-form form input[type="email"],
+section.comment-form form textarea {
+  margin: 10px auto;
+  padding: 0 5px;
+}
+section.comment-form form > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+section.comment-form form .main-btn {
+  display: inline-block;
+  padding: 10px 50px;
+  font-size: 0.8em;
+}
+footer#page-footer {
+  background: white;
+}
+footer#page-footer section {
+  border-bottom: none;
+}

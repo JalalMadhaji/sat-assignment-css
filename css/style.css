@@ -1,32 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Montserrat;
+  /* font-weight: 200; */
 }
 body {
   font-size: 100%;
   position: relative;
+  overflow-x: hidden;
 }
-body > header {
+header#page-header {
   background: linear-gradient(
       rgba(71, 71, 71, 0.808) 100%,
       rgba(71, 71, 71, 0.808) 100%
     ),
     url(../images/img_2_big.jpg) no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 800px;
   z-index: 1;
   position: relative;
 }
-/* header::before {
-  background-color: rgba(71, 71, 71, 0.808);
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-} */
 
 header #top-menu {
   display: flex;
@@ -193,7 +188,10 @@ main .courses div {
   text-align: left;
 
   margin: 0 15px;
-  box-shadow: 0px 5px 2px #666;
+  box-shadow: 0px 0px 2px #ccc;
+}
+main .courses div:hover {
+  box-shadow: 0px 5px 10px #ccc;
 }
 main .courses div img {
   width: 100%;
@@ -285,4 +283,14 @@ footer#page-footer section .adm-btn {
 footer#page-footer address {
   margin-top: 30px;
   color: #666;
+}
+p {
+  font-weight: 100;
+}
+i {
+  font-family: fontawesome;
+}
+span {
+  color: #999;
+  font-weight: 300;
 }
